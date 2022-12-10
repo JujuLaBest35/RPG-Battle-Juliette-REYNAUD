@@ -35,6 +35,10 @@ var pvTornade = "100";
 function degats_tornade(){
     pvTornade -= 10;
     pvTornadeHtml.innerHTML = pvTornade;
+
+    tonElement.style.visibility = "hidden"
+
+    tonElement.style.visibility = "visible"
 }
 
 var pvCaillouHtml = document.getElementById("PVCaillou");
@@ -44,7 +48,6 @@ function degats_caillou(){
     pvCaillou -= 10;
     pvCaillouHtml.innerHTML = pvCaillou;
 }
- 
 
 var pvFeuHtml = document.getElementById("PVFeu");
 var pvFeu = "100";
@@ -53,7 +56,6 @@ function degats_feu(){
     pvFeu -= 10;
     pvFeuHtml.innerHTML = pvFeu;
 }
-
 
 /*Fonction pour l'attaque spéciale vague du personnage rivière*/
 function vague(){
