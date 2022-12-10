@@ -1,0 +1,307 @@
+body{
+    background-image: url("Background1Light\ -\ Copie\ \(2\).png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+}
+
+.player{
+    height: 200px;
+    width: 200px;
+}
+
+#characters{
+    width: 60%;
+    height: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+
+.monsters{
+    height:200px;
+    width:200px;
+    align-self: start;
+}
+
+.monsters:hover{
+    filter: drop-shadow(0 1rem 3rem #553017); /*Ajouter de la couleur quand on passe le curseur sur un des monstres*/ 
+    cursor: pointer; /*Ajouter un curseur pour indiquer que l'on peut cliquer sur les monstres*/
+}
+
+/*PLacer les monstres*/
+.groupe_monstre{
+    display:flex;
+    flex-direction: column;
+    align-self : flex-start;
+}
+
+/*Plaver les images buissons*/
+.class_buisson{
+    height:15vh;
+    width:35vh;
+}
+
+/*Placer les boutons actions de tous les personnages dans les images buisson au dessus d'eux*/
+#attaque_arbre{
+border-radius: 25px;
+    position:absolute;
+    color:white;
+        z-index: 3;
+        left:24%;
+        bottom:30%;
+        margin: 10px;
+        width: 120px;
+        text-align: center;
+        border: 3px solid white;
+        background: rgba(0, 0, 0, 0.6);
+}
+
+#defendre_arbre{
+    border-radius: 25px;
+                position:absolute;
+                color:white;
+                z-index: 3;
+                left:24%;
+                bottom:27%;
+                margin: 10px;
+                width: 120px;
+                text-align: center;
+                border: 3px solid white;
+                background: rgba(0, 0, 0, 0.6);
+}
+
+#magie_arbre{
+    border-radius: 25px;
+                position:absolute;
+                color:white;
+                z-index: 3;
+                left:24%;
+                bottom:24%;
+                margin: 10px;
+                width: 120px;
+                text-align: center;
+                border: 3px solid white;
+                background: rgba(0, 0, 0, 0.6);
+}
+
+#attaque_plante{
+    border-radius: 25px;
+                    position:absolute;
+                    color:white;
+                    z-index: 3;
+                    left:45%;
+                    bottom:30%;
+                    margin: 10px;
+                    width: 120px;
+                    text-align: center;
+                    border: 3px solid white;
+                    background: rgba(0, 0, 0, 0.6);
+}
+
+#defendre_plante{
+    border-radius: 25px;
+                position:absolute;
+                color:white;
+                z-index: 3;
+                left:45%;
+                bottom:27%;
+                margin: 10px;
+                width: 120px;
+                text-align: center;
+                border: 3px solid white;
+                background: rgba(0, 0, 0, 0.6);
+}
+
+#magie_plante{
+    border-radius: 25px;
+                position:absolute;
+                color:white;
+                z-index: 3;
+                left:45%;
+                bottom:24%;
+                margin: 10px;
+                width: 120px;
+                text-align: center;
+                border: 3px solid white;
+                background: rgba(0, 0, 0, 0.6);
+}
+
+#attaque_souche{
+    border-radius: 25px;
+                    position:absolute;
+                    color:white;
+                    z-index: 3;
+                    left:66%;
+                    bottom:30%;
+                    margin: 10px;
+                    width: 120px;
+                    text-align: center;
+                    border: 3px solid white;
+                    background: rgba(0, 0, 0, 0.6);
+}
+
+#defendre_souche{
+    border-radius: 25px;
+                position:absolute;
+                color:white;
+                z-index: 3;
+                left:66%;
+                bottom:27%;
+                margin: 10px;
+                width: 120px;
+                text-align: center;
+                border: 3px solid white;
+                background: rgba(0, 0, 0, 0.6);
+}
+
+#magie_souche{
+    border-radius: 25px;
+                position:absolute;
+                color:white;
+                z-index: 3;
+                left:66%;
+                bottom:24%;
+                margin: 10px;
+                width: 120px;
+                text-align: center;
+                border: 3px solid white;
+                background: rgba(0, 0, 0, 0.6);
+}
+
+#attaque_riviere{
+    border-radius: 25px;
+                    position:absolute;
+                    color:white;
+                    z-index: 3;
+                    left:87%;
+                    bottom:30%;
+                    margin: 10px;
+                    width: 120px;
+                    text-align: center;
+                    border: 3px solid white;
+                    background: rgba(0, 0, 0, 0.6);
+}
+
+#defendre_riviere{
+    border-radius: 25px;
+                position:absolute;
+                color:white;
+                z-index: 3;
+                left:87%;
+                bottom:27%;
+                margin: 10px;
+                width: 120px;
+                text-align: center;
+                border: 3px solid white;
+                background: rgba(0, 0, 0, 0.6);
+}
+
+#magie_riviere{
+    border-radius: 25px;
+                position:absolute;
+                color:white;
+                z-index: 3;
+                left:87%;
+                bottom:24%;
+                margin: 10px;
+                width: 120px;
+                text-align: center;
+                border: 3px solid white;
+                background: rgba(0, 0, 0, 0.6);
+}
+
+.button:hover{
+    filter: drop-shadow(0 1rem 3rem #ffffff); 
+    cursor: pointer; /*Ajouter un curseur pour indiquer que l'on peut cliquer sur les boutons action*/
+}
+
+/*Indiquer les PV de tous les personnages en dessous ou au dessus d'eux*/
+#PVTornade{
+    border-radius: 25px;
+    position:absolute;
+    color:white;
+    z-index: 3;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+    border: 3px solid white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#PVCaillou{
+    border-radius: 25px;
+    position:absolute;
+    color:white;
+    z-index: 3;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+    border: 3px solid white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#PVFeu{
+    border-radius: 25px;
+    position:absolute;
+    color:white;
+    z-index: 3;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+    border: 3px solid white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#PVArbre{
+    border-radius: 25px;
+    color:white;
+    z-index: 3;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+    border: 3px solid white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#PVPlante{
+    border-radius: 25px;
+    color:white;
+    z-index: 3;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+    border: 3px solid white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#PVSouche{
+    border-radius: 25px;
+    color:white;
+    z-index: 3;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+    border: 3px solid white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#PVRiviere{
+    border-radius: 25px;
+    color:white;
+    z-index: 3;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+    border: 3px solid white;
+    background: rgba(0, 0, 0, 0.6);
+}
